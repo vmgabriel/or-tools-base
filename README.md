@@ -35,6 +35,22 @@ For each language, the basic steps for setting up and solving a problem are the 
 - Invoke the solver and display the results.
 
 
+**Vehicle Routing**
+One of the  most important application of optimization is vehicle routing the goal is to find the best routes for a fleet of vehicles visiting a set of locations.
+
+The most famous routing problem is the Traveling Salesman Problem(TSP): This find the shortest route for slaesman who needs to visit customers at different locations and return to locations and return to the starting point. This can represented by a graph.
+
+A more general version of the TSP is the vehicle routing problem(VRP) in which there are multiple vehicles. In most cases, VRPs have constraints: for example, vehivles might have capacities for the maximum weight or volume of items they can carry, or drivers might be required to visit locations during specified time windows, in this case use the following cases for solve:
+- Traveling salesman problem: the classic routing problem
+- Vehicle Routing Problem: A generalization of the TSP with various vehicles
+- VRP with capacity constraints: the vehicles have maximum capacities for the items
+- VRP with time windows: The vehicles must visit the locations in specified the interval
+- VRP with resource contraints: sush as space or personnel to load and unload vehicles at the depot
+- VRP with dropped visits: the vehicles are not required all location
+
+**Traveling Salesman Problem**
+Shows who to solve the TSP
+
 
 ## Installation
 Load with:
