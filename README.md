@@ -68,6 +68,12 @@ Distance between two points (x1,x2) and (y1,y2) is defined to be |x1 - y1| + |x2
 
 [manhattan implementing](https://gist.github.com/vmgabriel/2cd48fe2b560a35e290a393d23abdd80 "manhattan implementing")
 
+**Google Distance Matrix API**
+For create the distance matrix for any set of locations defined by addresses, or by latitudes and longitudes.
+
+[Documentation of Google Distance Matrix](https://developers.google.com/maps/gmp-get-started#create-billing-account "Configuration of Google Distance Matrix API")
+
+
 ## Installation
 Load with:
 ```bash

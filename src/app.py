@@ -8,6 +8,7 @@ from second import solve as second_solver
 from third import solve as third_solver
 from fourth import solve as fourth_solver
 from fifth import solve as fifth_solver
+from sixth import solve as sixth_solver
 
 
 def load():
@@ -30,6 +31,9 @@ def load():
 
     print('--------------------')
     fifth_solver()
+
+    print('--------------------')
+    # sixth_solver()
 
 
 if __name__ == '__main__':
