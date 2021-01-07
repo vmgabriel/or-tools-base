@@ -5,6 +5,7 @@ App configuration
 # Modules
 from first import first_solver
 from second import solve as second_solver
+from third import solve as third_solver
 
 
 def load():
@@ -16,7 +17,11 @@ def load():
     print(f'x - {solve1}')
     print(f'y - {solve2}')
 
+    print('--------------------')
     second_solver()
+
+    print('--------------------')
+    third_solver()
 
 
 if __name__ == '__main__':
