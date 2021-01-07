@@ -18,7 +18,7 @@ def read_csv(file_path: str, delimiter: str = ',') -> List[List[Any]]:
     """
     with open(file_path) as csv_file:
         csv_reader = reader(csv_file, delimiter=delimiter)
-        return list(csv_reader)
+        return list(map(lambda x: list(map(int, x)), list(csv_reader)[1:]))
 
 
 def print_solution(manager, routing, solution):
@@ -45,7 +45,7 @@ def operation():
     """Solve TSP"""
     file_path = 'src/second/data.csv'
     data = {}
-    data['distance_matrix'] = read_csv(file_path)[1:]
+    data['distance_matrix'] = read_csv(file_path)
     data['num_vehicles'] = 1
     data['depot'] = 0
 

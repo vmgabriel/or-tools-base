@@ -51,6 +51,22 @@ A more general version of the TSP is the vehicle routing problem(VRP) in which t
 **Traveling Salesman Problem**
 Shows who to solve the TSP
 
+there are various ways for resolve problems in this style, the control is the mode for resolve this situation and mode with this manage control
+
+**Vehicle Routing Problem**
+in VRP the goal is to find optimal routes for multiples vehicles visiting a set of locations.
+
+A better way to define optimal routes is to minimize the length of the longest single route among all vehicles this is the right definition if the goal is to complete all deliveries as soon as possible.
+
+- Capacity contraints -> pick up items at each location
+- Time windows -> each location must be visited within a specific time window
+
+We need the distence of matrix for solve that problems
+
+**Manhattan distance**
+Distance between two points (x1,x2) and (y1,y2) is defined to be |x1 - y1| + |x2 - y2|
+
+[manhattan implementing](https://gist.github.com/vmgabriel/2cd48fe2b560a35e290a393d23abdd80 "manhattan implementing")
 
 ## Installation
 Load with:
