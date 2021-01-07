@@ -28,7 +28,7 @@ def read_csv(file_path: str, delimiter: str = ',') -> List[tuple]:
 def load() -> dict:
     """load data"""
     data = {}
-    file_path = 'src/third/data.csv'
+    file_path = 'src/fourth/data.csv'
     data['locations'] = read_csv(file_path)
     data['num_vehicles'] = 1
     data['depot'] = 0
@@ -107,9 +107,11 @@ def run():
 
     # Setting first solution heuristic
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
-    search_parameters.first_solution_strategy = (
-        routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
+    search_parameters.local_search_metaheuristic = (
+        routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH
     )
+    search_parameters.time_limit.seconds = 30
+    search_parameters.log_search = True
 
     # Solve the problem
     solution = routing.SolveWithParameters(search_parameters)

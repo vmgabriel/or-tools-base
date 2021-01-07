@@ -6,6 +6,7 @@ App configuration
 from first import first_solver
 from second import solve as second_solver
 from third import solve as third_solver
+from fourth import solve as fourth_solver
 
 
 def load():
@@ -22,6 +23,9 @@ def load():
 
     print('--------------------')
     third_solver()
+
+    print('--------------------')
+    fourth_solver()
 
 
 if __name__ == '__main__':
