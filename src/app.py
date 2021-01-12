@@ -17,6 +17,8 @@ from eleventh import solve as eleventh_solver
 from twelfth import solve as twelveth_solver
 from thirteenth import solve as thirteenth_solver
 
+from cvrptw import solve as cvrptw_solver
+
 
 def load():
     """Load process"""
@@ -62,6 +64,9 @@ def load():
 
     print('--------------------')
     thirteenth_solver()
+
+    print('--------------------')
+    cvrptw_solver()
 
 
 if __name__ == '__main__':
