@@ -84,6 +84,17 @@ Minimize  the length of longest route.
 **Vehicle Routing Problem with Time Windows VRPTWs**
 Many vehicles routing problems involve scheduling visits to customers who are only abailable during specific time windows.
 
+**Dimension Routing**
+The routing solver uses an object called a dimension to keep track of quantities that accumulate along a vehicle's route, such asthe travel time or, if the vehicle is making pickups and deliveries, the total weight.
+
+this include two issues.
+
+- VRPTW
+- CVRP
+
+**Resource Contraints**
+VRPTW that also has constraints at the depot all vehicles need to ve loaded before departing the depot and unloaded upon return. Since there are only two available loading docks, at most wto vehicles can ve loaded of unloaded or unloaded at the same time. As a result, some vehicles must wait for others to ve loaded, delaying their departure from the depot. The problem is to find optimal vehicle routes for the VRPTW thtat also meet the loading and unloading constraints at the depot.
+
 
 ## Installation
 Load with:
