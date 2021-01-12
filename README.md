@@ -101,6 +101,9 @@ How to handle routing problems that have no feasible solution, dueto constraints
 
 To solve the problem, we introduce new costs - called penalties
 
+**Common Routing Tasks**
+Some common tasks related to solving vehicle routing problems
+
 ## Installation
 Load with:
 ```bash
