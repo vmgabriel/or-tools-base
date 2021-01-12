@@ -96,6 +96,11 @@ this include two issues.
 VRPTW that also has constraints at the depot all vehicles need to ve loaded before departing the depot and unloaded upon return. Since there are only two available loading docks, at most wto vehicles can ve loaded of unloaded or unloaded at the same time. As a result, some vehicles must wait for others to ve loaded, delaying their departure from the depot. The problem is to find optimal vehicle routes for the VRPTW thtat also meet the loading and unloading constraints at the depot.
 
 
+**Penalties and Dropping Visits**
+How to handle routing problems that have no feasible solution, dueto constraints. For example, if you are given a VRP with capacity constraints in which the total demand at all locations exceeds the total capacity of the vehicles, no solution is possible, in such cases, the vehicles must drop visits to some locatiosn. The problem is how to decide which visits to drop.
+
+To solve the problem, we introduce new costs - called penalties
+
 ## Installation
 Load with:
 ```bash
