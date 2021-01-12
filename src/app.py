@@ -15,6 +15,7 @@ from ninety import solve as ninety_solver
 from tenth import solve as tenth_solver
 from eleventh import solve as eleventh_solver
 from twelfth import solve as twelveth_solver
+from thirteenth import solve as thirteenth_solver
 
 
 def load():
@@ -58,6 +59,9 @@ def load():
 
     print('--------------------')
     twelveth_solver()
+
+    print('--------------------')
+    thirteenth_solver()
 
 
 if __name__ == '__main__':
