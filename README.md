@@ -104,6 +104,15 @@ To solve the problem, we introduce new costs - called penalties
 **Common Routing Tasks**
 Some common tasks related to solving vehicle routing problems
 
+**Routing Options**
+For Routing Solver this can following:
+
+- Search Limits: Terminate the solver after it reaches a specified limit, such as the maximum length of time
+- First Solution Strategy: Method for solver uses to find an initial solution.
+- Search Status: Print status
+- Local Search Options: Local Strategies - Metaheuristics -
+- Propagation Control: -> verify full propagation
+
 ## Installation
 Load with:
 ```bash
