@@ -77,6 +77,10 @@ For create the distance matrix for any set of locations defined by addresses, or
 **Capacity Constraints**
 Capacitated Vehicle Routing Problem(CVRP) is a VRP in which vehicles with limited carrying capacity need to pick up for deliver, this hava a maximum capacity
 
+**Vehicle Routing with Pickups and Deliveries**
+This is VRP in which each vehicle picks up items at various locations and drops them off at others.
+Minimize  the length of longest route.
+
 ## Installation
 Load with:
 ```bash
